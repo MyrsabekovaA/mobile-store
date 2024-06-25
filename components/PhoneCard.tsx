@@ -1,9 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { Phone } from "@/types";
 
+interface PhoneCardProps {
+    phone: Phone;
+}
 
-const PhoneCard = ({ phone }) => {
+const PhoneCard: React.FC<PhoneCardProps> = ({ phone }) => {
     const { model, description } = phone;
     return (
         <div className="phone-card group">

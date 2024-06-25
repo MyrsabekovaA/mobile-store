@@ -14,3 +14,8 @@ export interface SearchManuFacturerProps {
     manufacturer: string;
     setManuFacturer: (manufacturer: string) => void;
 }
+
+export interface Phone {
+    model: string;
+    description: string;
+}
